@@ -1,0 +1,2 @@
+# backend_mysql_fastapi_app_inventory
+Backend application for inventory management items
