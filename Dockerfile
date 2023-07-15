@@ -17,4 +17,4 @@ COPY ./src /code/src
 # CMD [ "source", "./.venv/bin/activate" ]
 EXPOSE 8000
 RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "${PORT}"]
