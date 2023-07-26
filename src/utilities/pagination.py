@@ -1,7 +1,7 @@
 import math
 
 
-async def pagination(pageSize, totalData, currentPage):
+async def pagination(pageSize: int, totalData: int, currentPage: int):
     return {
         "pageSize": pageSize,
         "totalData": totalData,

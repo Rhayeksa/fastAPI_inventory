@@ -10,4 +10,4 @@ router = APIRouter()
     description="root",
 )
 async def root():
-    return await response(code=200, message="Hello System")
+    return await response(code=200, message="Hello New System")
