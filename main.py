@@ -1,8 +1,9 @@
 from fastapi import FastAPI
-from src.routes import routes
-from src.config.project import PROJECT, VERSION, DESCRIPTION
-from src.model.index import metadata
+
 from src.config.db.inventory import engine
+from src.config.project import DESCRIPTION, PROJECT, VERSION
+from src.model.index import metadata
+from src.routes import routes
 
 metadata.create_all(bind=engine)
 

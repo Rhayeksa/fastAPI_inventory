@@ -1,8 +1,8 @@
 from os import environ
-from sqlalchemy import create_engine
+
 from dotenv import dotenv_values
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy import create_engine
+from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 env = dotenv_values(".env")
 
